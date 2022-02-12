@@ -5,10 +5,10 @@ categories: [AWS, ERROR]
 tags: [aws, ssh]
 ---
 
-### 원인
+## 원인
 IP는 동일하나 목적지 서버 장비 등이 바뀌었을 때 발생
 
-### 해결법
+## 해결법
 
 ```
 ssh-keygen -R [host]
