@@ -1,7 +1,7 @@
 ---
 title: WARNING REMOTE HOST IDENTIFICATION HAS CHANGED!
 date: 2022-02-12 10:40:00 +09:00
-categories: [AWS, ERROR]
+categories: [AWS, Error]
 tags: [aws, ssh]
 ---
 

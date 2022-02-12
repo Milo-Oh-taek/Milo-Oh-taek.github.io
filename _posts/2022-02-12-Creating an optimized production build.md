@@ -1,8 +1,8 @@
 ---
 title: Creating an optimized production build...
 date: 2022-02-12 10:40:00 +09:00
-categories: [AWS, ERROR]
-tags: [aws]
+categories: [AWS, Error]
+tags: [ec2]
 ---
 
 빌드시 Creating an optimized production build... 에서 Freeze
@@ -24,8 +24,8 @@ tags: [aws]
     3.sudo swapon /mnt/swapfile
     ```
     >순서대로 명령어 실행   
-    >메모리의 부족한 부분을 디스크의 일부를 사용하여 대신 사용
-    >스왑 사용시 속도가 느려진다는 단점
+    >메모리의 부족한 부분을 디스크의 일부를 사용하여 대신 사용   
+    >사용시 속도가 느려진다는 단점
 
     ```
     swap 해제
@@ -35,7 +35,7 @@ tags: [aws]
 ```
 
 
-출처: https://progdev.tistory.com/26 [플머의 개발 연구소]
+출처: <https://progdev.tistory.com/26> [플머의 개발 연구소]
 
 
 
