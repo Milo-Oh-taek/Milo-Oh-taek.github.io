@@ -23,7 +23,7 @@ tags: [aws]
     2.sudo mkswap /mnt/swapfile
     3.sudo swapon /mnt/swapfile
     ```
-    >순서대로 명령어 실행
+    >순서대로 명령어 실행   
     >메모리의 부족한 부분을 디스크의 일부를 사용하여 대신 사용
     >스왑 사용시 속도가 느려진다는 단점
 
