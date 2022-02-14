@@ -1,7 +1,7 @@
 ---
 title: EC2 ubuntu port redirect 포트 리다이렉트 포워딩
 date: 2022-02-12 10:40:00 +09:00
-categories: [AWS, Ubuntu]
+categories: [AWS]
 tags: [ubuntu, port]
 ---
 
