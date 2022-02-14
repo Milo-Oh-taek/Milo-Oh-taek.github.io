@@ -1,7 +1,7 @@
 ---
 title: EC2 ubuntu18 nginx
 date: 2022-02-12 10:40:00 +09:00
-categories: [AWS]
+categories: [AWS, Ubuntu]
 tags: [ubuntu, nginx]
 ---
 
