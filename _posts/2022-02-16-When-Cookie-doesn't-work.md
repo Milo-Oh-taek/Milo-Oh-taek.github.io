@@ -21,13 +21,13 @@ Credendial. 말그대로 자격을 뜻하며
 ## 2. Domain option
 >The Domain attribute specifies which hosts can receive a cookie. If unspecified, the attribute defaults to the same host that set the cookie, excluding subdomains. If Domain is specified, then subdomains are always included. Therefore, specifying Domain is less restrictive than omitting it. However, it can be helpful when subdomains need to share information about a user.
 
-**Domain attribute를 설정해야 sub domain에서 쿠키 사용이 가능하다.**
+**Domain attribute를 설정해야 sub domain에서 쿠키 사용이 가능하다.**   
 ex) <mark>Domain = myportfolio.com</mark> -> <mark>api.myportfolio.com</mark>에서 access ㅇ
 
 ## 3. Path option
 >The Path attribute indicates a URL path that must exist in the requested URL in order to send the Cookie header. The %x2F ("/") character is considered a directory separator, and subdirectories match as well.
 
-**설정된 경로 및 하위 경로에 있는 페이지에서 접근 가능.**
+**설정된 경로 및 하위 경로에 있는 페이지에서 접근 가능.**   
 ex) <mark>Path=/user</mark> -> <mark>/user/login</mark>, <mark>/user/logout</mark>, ...
 Path=/ 로 설정할 시 제한 x
 
@@ -36,15 +36,15 @@ Path=/ 로 설정할 시 제한 x
 
 쿠키의 공유를 same site로 제한 할 지 설정.
 - Lax(Chrome Default)
->Cookies are not sent on normal cross-site subrequests (for example to load images or frames into a third party site), but are sent when a user is navigating to the origin site (i.e., when following a link).
+>Cookies are not sent on normal cross-site subrequests (for example to load images or frames into a third party site), but are sent when a user is navigating to the origin site (i.e., when following a link).   
 링크를 따라 들어 오는 등의 경로를 제외하고는 다른 도메인 쿠키 접근 불가.
 
 same site의 기준은?
 **도메인 접미사와 바로 앞의 도메인 부분이 결합된 것**
 
-<mark>www.web.dev</mark>와  <mark>static.web.dev</mark>은 same site.
-<mark>galaxy.github.io</mark>와  <mark>apple.github.io</mark>은 same site X.
->github.io 가 접미사이기 때문이다.
+<mark>www.web.dev</mark>와  <mark>static.web.dev</mark>은 same site.   
+<mark>galaxy.github.io</mark>와  <mark>apple.github.io</mark>은 same site X.   
+>github.io 가 접미사이기 때문이다.   
 >public suffix list는 따로 문서화 되어있다. (https://publicsuffix.org/list/)
 
 

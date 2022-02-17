@@ -5,7 +5,7 @@ categories: [AWS, Ubuntu]
 tags: [ubuntu, node]
 ---
 
-##Node Install 우분투18 노드 설치
+## Node Install 우분투18 노드 설치
 ```
 $curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -E -
 $sudo apt install -y nodejs
