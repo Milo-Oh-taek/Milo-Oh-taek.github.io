@@ -15,7 +15,7 @@ for...of 는 반복가능한 객체(Array, Map, Set, String, TypedArray 등)를 
 `````
 const arr = [1,2,3];
 for(item of arr){
-	console.log(item);
+  console.log(item);
 }
 `````
 
@@ -54,9 +54,9 @@ log([...a, ...[3,4]]);	// [1,2,3,4]
 
 `````
 function *gen() {
-	yield 1;
-    yield 2;
-    yield 3;
+  yield 1;
+  yield 2;
+  yield 3;
 }
 let iter = gen();
 log(iter.next());	//{value: 1, done: false}
