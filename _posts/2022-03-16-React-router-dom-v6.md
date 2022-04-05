@@ -99,8 +99,8 @@ function App() {
 `````
 
 ### Common layout
-####공통 레이아웃의 경우 기존 {children} 과 같이 썼다면,   
-####Outlet을 import하고 children 대신 쓰면 된다.
+#### 공통 레이아웃의 경우 기존 {children} 과 같이 썼다면,   
+#### Outlet을 import하고 children 대신 쓰면 된다.
 
 
 
