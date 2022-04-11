@@ -44,12 +44,12 @@ function App() {
 `````
 
 ### What useLocation has
->hash: "#product"
-key: "g1vriyme"
-pathname: "/business"
-search: ""
-state: null
-[[Prototype]]: Object
+> hash: "#product"
+> key: "g1vriyme"
+> pathname: "/business"
+> search: ""
+> state: null
+> [[Prototype]]: Object
 
 - pathname: strings after domain
 - search: strings after '?' of pathname
