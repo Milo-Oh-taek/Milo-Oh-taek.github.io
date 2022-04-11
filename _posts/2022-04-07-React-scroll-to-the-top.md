@@ -1,8 +1,8 @@
 ---
-title: Scroll to the top(react)
+title: Scroll to the top(react-router-dom useLocation)
 date: 2022-04-07 21:07:00 +09:00
 categories: [REACT]
-tags: [react]
+tags: [react, useLocation]
 ---
 
 ### Install react-router-dom
@@ -42,6 +42,22 @@ function App() {
   );
 }
 `````
+
+### What useLocation has
+>hash: "#product"
+key: "g1vriyme"
+pathname: "/business"
+search: ""
+state: null
+[[Prototype]]: Object
+
+- pathname: strings after domain
+- search: strings after '?' of pathname
+- hash: strings after '#' of pathname
+- state: location object will be sent
+- key: can find location object in history stack with
+
+
 
 
 
