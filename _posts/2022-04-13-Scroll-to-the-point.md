@@ -6,7 +6,7 @@ tags: [react]
 ---
 ## Scroll 특정 포인트로 이동 2 method   
 
-최상단 이동은 (https://milo-oh-taek.github.io/posts/React-scroll-to-the-top/) 참고   
+모든 페이지 최상단 이동은 [최상단 이동](https://milo-oh-taek.github.io/posts/React-scroll-to-the-top/) 참고   
 
 ### 1. html basic function   
 `````
