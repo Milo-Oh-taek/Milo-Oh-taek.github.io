@@ -1,6 +1,6 @@
 ---
 title: Docker Image create 도커 이미지 만들기
-date: 2022-05-23 00:50:00 +09:00
+date: 2022-05-30 23:50:00 +09:00
 categories: [DOCKER]
 tags: [docker]
 ---
