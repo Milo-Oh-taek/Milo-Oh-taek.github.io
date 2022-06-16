@@ -97,12 +97,64 @@ function App() {
   );
 }
 `````
-
+### Nested Route 중첩 라우팅
 ### Common layout
 #### 공통 레이아웃의 경우 기존 {children} 과 같이 썼다면,   
 #### Outlet을 import하고 children 대신 쓰면 된다.
 
+#### Method 1.
+`````
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<App />}>
+      <Route path="expenses" element={<Expenses />} />
+      <Route path="invoices" element={<Invoices />} />
+    </Route>
+  </Routes>
+</BrowserRouter>
 
+//App.js
+import { Outlet, Link } from "react-router-dom";
+
+export default function App() {
+  return (
+    <div>
+      <h1>Bookkeeper</h1>
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
+        <Link to="/invoices">Invoices</Link> |{" "}
+        <Link to="/expenses">Expenses</Link>
+      </nav>
+      <Outlet />
+    </div>
+  );
+}
+`````
+#### Method 2.
+`````
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/workspace/*" element={<Workspace />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+const Workspace= () => {
+  return (
+    <Routes>
+      <Route path="channel" element={<Channel />} />
+      <Route path="dm" element={<DirectMessage />} />
+    </Routes>
+  );
+};
+`````
 
 
 
