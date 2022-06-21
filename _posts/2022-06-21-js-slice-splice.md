@@ -53,7 +53,8 @@ console.log(months);
 `````
 
 ## Reference
-[https://docs.docker.com/network/overlay/#publish-ports](https://docs.docker.com/network/overlay/#publish-ports)
+[mozilla - slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)   
+[mozilla - splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
 
 
