@@ -72,7 +72,7 @@ useEffect(() => {
 });
 `````
 
-###References
+## References
 [https://codepen.io/dcorb/pen/eJLMxa](https://codepen.io/dcorb/pen/eJLMxa)   
 [https://codepen.io/chriscoyier/pen/vOZNQV](https://codepen.io/chriscoyier/pen/vOZNQV)   
 [https://www.zerocho.com/category/JavaScript/post/59a8e9cb15ac0000182794fa](https://www.zerocho.com/category/JavaScript/post/59a8e9cb15ac0000182794fa)
