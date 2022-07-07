@@ -1,5 +1,5 @@
 ---
-title: modern js tutorial basic 1
+title: modern js tutorial basic
 date: 2022-07-05 14:30:00 +09:00
 categories: [JS]
 tags: [javascript]
@@ -54,6 +54,21 @@ alert(height || 100); // 100
 alert(height ?? 100); // 0
 `````
 ** 안정성 관련 이슈 때문에 ??는 &&나 ||와 함께 사용하지 못합니다.(괄호 사용 필요)**
+
+### 함수
+- 함수는 이름에 언급된 동작 하나만 담당해야 한다.
+- 함수 네이밍
+  - ex) "get...", "calc...", "create...", "check..."
+- 깔끔한 코드를 위해 지역 변수와 매개변수 활용
+
+### 변수
+명명규칙   
+- 숫자와 문자 사용하되 첫 글자는 숫자가 될 수 없음.
+- 특수기호는 $와 _만 사용가능
+- 자료형을 바꿔가며 값 할당 가능
+
+### 바벨
+바벨은 transpiler로, 모던 자바스크립트 코드를 구 표준을 준수하는 코드로 바꿔준다.   
 
 ## References
 [Modern Javascript Tutorial](https://ko.javascript.info/)   
