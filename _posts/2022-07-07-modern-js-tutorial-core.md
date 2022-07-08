@@ -72,7 +72,30 @@ Object.assign(user, permissions1, permissions2);
 #### 가비지 컬렉션
 garbage collector은 끊임없이 동작하며 모든 객체를 모니터링하고, 도달할 수 없는 객체는 삭제한다.   
 
+##### mark-and-sweep
+- 가비지 컬렉터는 루트 정보를 수집하고 이를 mark 한다.
+- 루트가 참조하고 있는 모든 객체를 방문하고 이것들을 mark 한다.
+- mark된 모든 객체에 방문하고 그 객체들이 참조하는 객체도 mark 한다.
+- 한번 방문한 객체는 전부 mark하기에 같은 객체를 다시 방문하는 일은 없다.
+- 루트에서 도달 가능한 모든 객체를 방문할 때까지 위 과정을 반복한다.
+- mark 되지 않은 모든 객체를 메모리에서 삭제한다.
 
+#### this
+- this 값은 런타임에 결정됨.
+- object.method() 같이 메서드 형태로 호출시 this는 object를 참조함.
+- 화살표 함수 안에서 this 사용시 외부에서 this 값을 가져옴.
+
+`````
+let user = {
+  firstName: "보라",
+  sayHi() {
+    let arrow = () => alert(this.firstName);
+    arrow();
+  }
+};
+
+user.sayHi(); // 보라
+`````
 
 
 ## References
