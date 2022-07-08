@@ -1,0 +1,79 @@
+---
+title: modern js tutorial core
+date: 2022-07-07 21:30:00 +09:00
+categories: [JS]
+tags: [javascript]
+---
+
+## Javascript
+### 객체
+#### computed property
+객체 프로퍼티 키가 대괄호로 둘러싸여 있는 경우   
+`````
+let fruit = prompt("어떤 과일을 구매하시겠습니까?", "apple");
+
+let bag = {
+  [fruit]: 5, // 변수 fruit에서 프로퍼티 이름을 동적으로 받아 옵니다.
+};
+
+alert( bag.apple ); // fruit에 "apple"이 할당되었다면, 5가 출력됩니다.
+`````
+`````
+let fruit = 'apple';
+let bag = {
+  [fruit + 'Computers']: 5 // bag.appleComputers = 5
+};
+`````
+#### 'in'연산자로 객체 프로퍼티 존재 확인   
+`````
+let user = { name: "John", age: 30 };
+
+alert( "age" in user ); // user.age가 존재하므로 true가 출력됩니다.
+alert( "blabla" in user ); // user.blabla는 존재하지 않기 때문에 false가 출력됩니다.
+`````
+
+#### 객체의 복사
+##### for문 복사
+`````
+let user = {
+  name: "John",
+  age: 30
+};
+
+let clone = {}; // 새로운 빈 객체
+
+// 빈 객체에 user 프로퍼티 전부를 복사해 넣습니다.
+for (let key in user) {
+  clone[key] = user[key];
+}
+
+// 이제 clone은 완전히 독립적인 복제본이 되었습니다.
+clone.name = "Pete"; // clone의 데이터를 변경합니다.
+
+alert( user.name ); // 기존 객체에는 여전히 John이 있습니다.
+`````
+
+##### Object.assign 복사
+`````
+let user = { name: "John" };
+
+let permissions1 = { canView: true };
+let permissions2 = { canEdit: true };
+
+// permissions1과 permissions2의 프로퍼티를 user로 복사합니다.
+Object.assign(user, permissions1, permissions2);
+
+// now user = { name: "John", canView: true, canEdit: true }
+`````
+
+**위 두 방법 모두 객체의 모든 프로퍼티가 원시값일 경우만 가능하다.**
+**객체 안에 또 다른 객체 형태가 존재한다면 깊은복사 알고리즘 구현 or lodash의  _.cloneDeep(obj)이용**
+
+#### 가비지 컬렉션
+garbage collector은 끊임없이 동작하며 모든 객체를 모니터링하고, 도달할 수 없는 객체는 삭제한다.   
+
+
+
+
+## References
+[Modern Javascript Tutorial](https://ko.javascript.info/)   
