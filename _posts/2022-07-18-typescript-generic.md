@@ -1,6 +1,6 @@
 ---
 
-title: typescript advanced type
+title: typescript generic
 
 date: 2022-07-18 23:20:00 +09:00
 
