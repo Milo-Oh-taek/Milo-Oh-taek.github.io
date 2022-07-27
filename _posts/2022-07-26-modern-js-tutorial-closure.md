@@ -58,6 +58,47 @@ let counter = makeCounter();
 - **count++가 실행되면서 count 값이 증가하는데, 변숫값 갱신은 변수가 저장된 렉시컬 환경에서 이뤄짐.**
 
 
+### 가비지 컬렉션
+
+함수 호출이 끝나면 함수에 대응하는 렉시컬 환경이 메모리에서 제거됨.(객체는 도달 가능한 상태일 때만 메모리에 유지)   
+
+**호출이 끝난 후에도 여전히 도달 가능한 중첩 함수가 있을 수 있고, [[Environment]]에 외부 함수 렉시컬 환경에 대한 정보가 저장됨**
+
+`````
+function f() {
+  let value = 123;
+
+  return function() {
+    alert(value);
+  }
+}
+
+let g = f(); // g가 살아있는 동안엔 연관 렉시컬 환경도 메모리에 살아있습니다.
+
+g = null; // 도달할 수 없는 상태가 되었으므로 메모리에서 삭제됩니다.
+`````
+
+하지만 실제로는 자바스크립트 엔진이 이를 지속해서 최적화 작업 진행.   
+**외부 변수가 사용되지 않는다고 판단하면 이를 메모리에서 제거.(V8에서 제거된 변수는 사용할 수 없음)**
+
+`````
+let value = "이름이 같은 다른 변수";
+
+function f() {
+  let value = "가장 가까운 변수";
+
+  function g() {
+    debugger; // 콘솔에 alert(value);를 입력하면 '이름이 같은 다른 변수'가 출력됩니다.
+  }
+
+  return g;
+}
+
+let g = f();
+g();
+`````
+
+
 
 ## References
 [Modern Javascript Tutorial](https://ko.javascript.info/)   
