@@ -98,6 +98,29 @@ let g = f();
 g();
 `````
 
+### 예시
+
+`````
+function makeCounter() {
+  let count = 0;
+
+  return function() {
+    return count++;
+  };
+}
+
+let counter = makeCounter();
+let counter2 = makeCounter();
+
+alert( counter() ); // 0
+alert( counter() ); // 1
+
+alert( counter2() ); // ?
+alert( counter2() ); // ?
+`````
+> 두 함수는 독립적인 렉시컬 환경을 갖게되므로 각 함수는 자신만의 count를 갖게 됨.
+
+
 
 
 ## References
