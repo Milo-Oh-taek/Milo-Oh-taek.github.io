@@ -16,7 +16,7 @@ function sayHi(who, phrase) {
 
 setTimeout(sayHi, 1000, "홍길동", "안녕하세요."); // 홍길동 님, 안녕하세요.
 
-// 잘못된 코드
+// 잘못된 코드 - 함수에 ()를 붙이면 return값이 들어온다.
 setTimeout(sayHi(), 1000);
 `````
 
