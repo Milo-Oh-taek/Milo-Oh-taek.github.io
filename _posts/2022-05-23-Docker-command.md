@@ -68,7 +68,7 @@ $ docker kill : stop immediately
 `````
 $ docker rm
 $ docker rm `docker ps -a -q` : 중지된 모든 컨테이너 삭제
-$ docker rmi : 도커 이미지 삭제
+$ docker rmi : 도커 이미지 같이 삭제
 $ docker system prune : 사용하지 않는 데이터 삭제
 `````
 
@@ -80,10 +80,16 @@ $ docker exec (-it : 명령어 실행 후 계속 명령어 적을 수 있는 옵
 `````
 $ docker exec -it sh
 $ docker run -it sh
+$ docker run -d // detached mode
 `````
+
+### Run vs Start
+- Docker Run: build a new container based on the image, Attached Mode
+- Docker Start: restart already built one, Detached Mode(background running)
 
 ## Reference
 - 따라하며 배우는 도커와 CI환경 -위키북스
+- [udemy](https://www.udemy.com/course/docker-kubernetes-2022)
 
 
 
