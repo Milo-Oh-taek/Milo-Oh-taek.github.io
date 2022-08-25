@@ -23,6 +23,15 @@ let user = new User("John");
 user.sayHi();
 `````
 
+- class 또한 함수로 분류됨.
+- 하지만 class로 생성한 함수엔 특수 내부 프로퍼티 '[[IsClassConstructor]]: true'
+- 클래스에 정의된 메서드는 non-enumerable
+- strict mode 적용
+
+
+
+
+
 
 
 
