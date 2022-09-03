@@ -1,5 +1,5 @@
 ---
-title: modern js tutorial class
+title: js promise api
 date: 2022-09-03 21:03:00 +09:00
 categories: [JS]
 tags: [javascript]
