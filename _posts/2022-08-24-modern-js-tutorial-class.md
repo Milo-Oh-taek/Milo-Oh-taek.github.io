@@ -28,7 +28,17 @@ user.sayHi();
 - 클래스에 정의된 메서드는 non-enumerable
 - strict mode 적용
 
+## 정적 메서드
+#### 특정 클래스 인스턴스가 아닌 클래스 '전체'에 필요한 기능을 만들 때 사용
+`````
+class User {
+  static staticMethod() {
+    alert(this === User);
+  }
+}
 
+User.staticMethod(); // true
+`````
 
 
 
